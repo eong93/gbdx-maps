@@ -34,7 +34,7 @@ From the catalog search results pick a Catalog ID to run OSN on. For this exampl
 ```python
 data = "s3://receiving-dgcs-tdgplatform-com/055378720010_01_003"
 ```
-Set image location as a varible to be used in tasks.
+Set image location as a varaible to be used in tasks.
 
 ```python
 aoptask = gbdx.Task("AOP_Strip_Processor", data=data, enable_dra=True, enable_pansharpen=True, enable_acomp=True, ortho_epsg='UTM', bands='PAN+MS', ortho_pixel_size='0.5', ortho_interpolation_type='Bilinear')

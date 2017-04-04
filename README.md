@@ -5,7 +5,7 @@
 from gbdxtools import Interface
 gbdx = Interface()
 ```
-Import/initiatize tools from module
+Import/define tools from module
 
 ```python
 wkt_string = "POLYGON((-77.49189376831055 38.97302269384043,-77.43335723876953 38.97302269384043,-77.43335723876953 38.920688310253,-77.49189376831055 38.920688310253,-77.49189376831055 38.97302269384043))"

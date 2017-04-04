@@ -29,12 +29,12 @@ order_id = gbdx.ordering.order('103001003A230A00')
 print order_id
 gbdx.ordering.status(order_id)
 ```
-From the catalog search results pick a Catalog ID to run OSN on. For this example, Catalog ID `103001003A230A00` was picked and was ordered.
+From the catalog search results pick a Catalog ID to run OSN on. For this example, Catalog ID `103001003A230A00` was picked and was ordered. Once a Catalog ID is ordered, the s3 location of the image will be returned.
 
 ```python
 data = "s3://receiving-dgcs-tdgplatform-com/055378720010_01_003"
 ```
-Once a Catalog ID is ordered, the s3 location of the image will be returned.
+Set image location as a varible to be used in tasks.
 
 ```python
 aoptask = gbdx.Task("AOP_Strip_Processor", data=data, enable_dra=True, enable_pansharpen=True, enable_acomp=True, ortho_epsg='UTM', bands='PAN+MS', ortho_pixel_size='0.5', ortho_interpolation_type='Bilinear')

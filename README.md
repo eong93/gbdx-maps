@@ -1,5 +1,6 @@
 # This example details how to run OpenSkyNet (OSN) to return aircraft detections.
 *Requires gbdxtools Python module*
+[Instructions on how to install gbdxtools](http://gbdxtools.readthedocs.io/en/latest/user_guide.html)
 
 ```python
 from gbdxtools import Interface
@@ -57,3 +58,5 @@ workflow.savedata(osntask.outputs.results, "some_folder_under_account_prefix")
 workflow.execute()
 ```
 This workflow will run the above tasks in the specified order. Save the outputs of OSN to desired folder on s3.
+
+[In-depth documentation on gbdxtools](http://gbdxtools.readthedocs.io/en/latest/running_workflows.html)
